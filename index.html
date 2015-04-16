@@ -2,24 +2,24 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="main.css"/>
-	
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script type="text/javascript" src="application.js"></script>
-	
+		<script src="jquery.sticky.js"></script>
+		<script src="index.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Cantarell:400' rel='stylesheet' type='text/css'>
 		<title>Aaron Kolenda</title>
 	</head>
 	
 	<body>
 	
-		<div id="container">
+		<div class="container">
 	
-			<div id="header">
+			<header>
 				
-				<h1>I am Aaron Kolenda, an aspiring web developer.</h1>
+				<h1>Aaron Kolenda - Front End Engineer</h1>
 				
-			</div>
+			</header>
 				
-			<div class="nav">
+			<div class="nav" id="nav">
 					
 				<p><a href="#aboutMe">About Me</a></p> 
 				<p><a href="#myWork">My Work</a></p>
@@ -27,56 +27,34 @@
 				
 			</div>
 				
-			<div id="aboutMe">
+			<div class="intro" id="aboutMe">
 				
-			<h1>Introduction</h1>
-			
-			<p>Hello, I am Aaron Kolenda. I currently bust my ass at United Parcel Service in order to pay for school, 
-			so that one day I can have a desk job. I hope to become a web professional before my current 
-			job gets <a href="http://mashable.com/2013/12/01/amazon-unveils-flying-robot-delivery-drones/">replaced by machines</a>,
-			or even some other <a href="http://www.salon.com/2013/12/02/chimps_seeking_freedom_sue_for_legal_personhood/">species of 
-			primate.</a> Seriously though, <a href="Resume.pdf">here's my resume.</a></p>
+				<h1>Introduction</h1>
+				
+				<p><img class="float-right" src="images/Aaron.jpeg">Hello, I am Aaron Kolenda. If you reading this, it means I just graduated from the Iron Yard a few days ago. So right now I'm only going to have one project featured here, because I need a little time to clean up my GitHub and decide what other projects to put in my portfolio. This will look a lot better in a less than a week, I promise.</p>
+
+
 		
 			</div>
 		
-			<div id="myWork">
-			<h1>Projects</h1>
-			<p class="nopadding"><a href="http://aaronkolenda.github.io/GoogleClone/">This</a> is a clone of the Google homepage</p>
-			 <a href="http://aaronkolenda.github.io/GoogleClone/"><img class="imgborder" src="googleclone.png"></a> 
-			 
-			<p><a href="http://aaronkolenda.github.io/37signals/">This</a> is a clone of the 37 signals homepage</p>
-			<a href="http://aaronkolenda.github.io/37signals/"><img class="imgborder" src="signals.png"></a> 
-			
-			<p><a href="http://aaronkolenda.github.io/hotorcold/">This</a> is a "Hot or Cold" game I made. The user guesses a number 
-			between 1 and 100 and is told how hot or cold she is, and whether she is warmer or colder than her last guess. Keep 
-			guessing until the correct number is found.</p>
-			<a href="http://aaronkolenda.github.io/hotorcold/"><img class="imgborder" src="hotorcold.png"></a> 
-			
-			<p><a href="http://aaronkolenda.github.io/shoppinglist/">This</a> is a simple app for adding, crossing off, and removing 
-			items from a shopping list.</p>
-			<a href="http://aaronkolenda.github.io/shoppinglist/"><img class="imgborder" src="shop.png"></a>
-			
-			<p><a href="http://aaronkolenda.github.io/musicquiz/">This</a> is a music history quiz app. Keeps track of the user's
-			score and displays hints as needed.</p>
-			<a href="http://aaronkolenda.github.io/musicquiz/"><img class="imgborder" src="quiz.png"></a> 
-			
-			<p><a href="http://aaronkolenda.github.io/moviesearch/">This</a> is a search app for 
-			simultaneously searching IMDB for Movie or TV Show and Amazon Instant Video for Prices. Displays information using the
-			IMDB api and an Amazon widget.</p>
-			<a href="http://aaronkolenda.github.io/moviesearch/"><img class="imgborder" src="search.png"></a> 
-			
-			<p>And <a href="http://aaronkolenda.github.com">here</a> is a link to my GitHub Page, with all of the above projects 
-			available.</p>
-			
+			<div class="projects" id="myWork">
+				<h1>Projects</h1>
+				<div class="description">
+					<p class="nopadding"><a href="http://drumchum.herokuapp.com/">This</a> is my final project for the Iron Yard. It is a drum machine I built with Javascript and Backbone.js, with a simple Node.js back end.</p>
+				</div>
+				<div class="screenshot">
+					<a href="http://drumchum.herokuapp.com/"><img class="imgborder" src="images/drumchum.png"></a> 
+				</div>
 			</div>
 		
-			<div id="contact">
+			<div id="contact" class="contact">
 			
 			<h1>Contact</h1>
-			<a href="http://twitter.com/aay440"><img src="twitter.png"></a>
-			<a href="http://facebook.com/aaron.kolenda"><img src="facebook.png"></a>
-			<a href="http://google.com/+AaronKolenda"><img src="google-plus.png"></a>
-			<img src="emailimg.png">
+			<a href="http://twitter.com/aay440"><img src="images/twitter.png"></a>
+			<a href="http://facebook.com/aaron.kolenda"><img src="images/facebook.png"></a>
+			<a href="http://google.com/+AaronKolenda"><img src="images/google-plus.png"></a>
+			<a href="http://github.com/AaronKolenda"><img src="images/github.png"></a>
+			<img src="images/emailimg.png">
 			</div>
 		
 		</div>

@@ -1,165 +1,129 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-   This is the CSS reset.
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-	background-color: fff;
-	font-family: Arial,sans-serif;
-	font-size: 0.8em;
-	font-weight: bold;
-	height: 100%;
+	font-size: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
-html {
-	height: 100%;
-	}
-	
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* CSS reset is above. My CSS starts here */
-  /* A container element centers the page */ 
-#container { margin-left: auto; 			
-    margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-    width:95%; 
-    min-width:1000px;
-    color:#000000;
-    border:1px solid #000000;
+header {
 	text-align: center;
-	background-color: #ffffff;
-	padding: 15px;
-	border-radius: 10px;
-	font-family: Calibri,sans-serif;
-	background-image: url('back.png');
+	font-family: 'Cantarell', sans-serif;
+	font-size: 18px;
+	color: white;
+	background: linear-gradient(rgb(170, 66, 3), rgba(0,0,0,0.01));
+	padding: 30px;
 }
 
-body {
-	background-color: #0C3A66;
-}
-
-#header {
-	position: relative;
-	height: 150px;
-	width: 100%;
-	background-color: #ffffff;
-	border:1px solid #000000;
-	border-radius: 10px;
-	/* Gradient Background */
-	background: #f2f5f6; /* Old browsers */
-	background: -moz-linear-gradient(top,  #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), 
-	color-stop(100%,#c8d7dc)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
-
-}
-
-#header h1{
-color: #0C3A66;
+header h1 {
+	color: rgb(33, 35, 30);
 }
 
 h1 {
-color: #C1C1C1;
-font-size: 60px;
-}
-
-.nav  {
-margin: 40px 0px;
-text-align: center;
-}
-
-.nav a{ 
-text-decoration: none; 
-color: #0000FF;
-}
-
-.nav a:hover {
- text-decoration: underline;
- }
- 
-.nav p{ 
-padding: 40px 70px;
-display:inline;
-font-size:40px;
-}
-
-#aboutMe {
-font-size:20px;
-}
-
-#myWork {
-margin: 40px 0px;
-font-size:20px;
-}
-
-#myWork p {
-padding-top: 10px;
-padding-bottom: 10px;
-}
-
-#contact img{
-display:inline;
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 20px;
+	color: #C1C1C1;
+	font-size: 60px;
 }
 
 img {
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 60px;
 }
 
+.contact img{
+	display:inline;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+.container { 
+	font-size: 12px;
+	text-align: center;
+	font-family: 'Cantarell', sans-serif;
+	background-image: url('images/back.png');
+}
+
+.description {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.fix-nav {
+	position: fixed;
+	margin: 0px;
+	background-color: rgba(255, 255, 255, 0.498039);
+	top: 0px;
+	padding: 30px 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.fix-nav p {
+    padding: 40px 70px;
+    display: inline;
+    font-size: 40px;
+}
+
+.fix-nav a {
+    text-decoration: none;
+    color: rgb(192, 43, 24);
+}
+
+.float-right {
+	height: 120px;
+	width: 120px;
+	border-radius: 30px;
+	margin-left: 10px;
+	float: right;
+	margin-bottom: 0px;
+}
+
 .imgborder {
     border:1px solid #C1C1C1;
 	border-radius: 10px;
+}
+
+.intro {
+	font-size: 20px;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-top: 10px;
+}
+
+.nav  {
+	margin: 40px 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.nav a{ 
+	text-decoration: none; 
+	color: rgb(192, 43, 24);
+}
+
+.nav a:hover {
+ 	text-decoration: underline;
+}
+ 
+.nav p{ 
+	padding: 40px 70px;
+	display:inline;
+	font-size:40px;
+}
+
+.projects {
+	margin: 40px 0px;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.projects p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.screenshot {
+	display: inline-block;
+	width: 30%;
 }
 
