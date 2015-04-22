@@ -43,9 +43,12 @@ img {
 }
 
 .description {
-	width: 50%;
+	width: 40%;
 	display: inline-block;
 	vertical-align: top;
+	margin-right: 70px;
+	position: relative;
+  	bottom: 36px;
 }
 
 .fix-nav {

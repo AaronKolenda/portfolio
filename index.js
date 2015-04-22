@@ -8,13 +8,15 @@ $(document).on("ready", function() {
 		console.log("in scroll");
 		if ($("#nav-sticky-wrapper").hasClass('is-sticky')) {
 			console.log("in if");
-			$nav.css("background-color", "rgba(255, 255, 255, .8");
+			$nav.css("background-color", "rgba(255, 255, 255, .9");
 			$nav.css("top", "-40px");
+			$nav.css("z-index", "1");
 		}
 		if ($("#nav-sticky-wrapper").hasClass('is-sticky') === false) {
 			console.log("in second if");
 			$nav.css("background-color", "transparent");
 			$nav.css("top", "0px");
+			$nav.css("z-index", "0");
 		}
 	});
 
