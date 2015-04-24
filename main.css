@@ -25,7 +25,6 @@ h1 {
 img {
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 60px;
 }
 
 .contact img{
@@ -45,10 +44,8 @@ img {
 .description {
 	width: 40%;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	margin-right: 70px;
-	position: relative;
-  	bottom: 36px;
 }
 
 .fix-nav {
@@ -121,12 +118,41 @@ img {
 }
 
 .projects p {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
+}
+
+.project-wrap {
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
 }
 
 .screenshot {
 	display: inline-block;
+	vertical-align: middle;
 	width: 30%;
+}
+
+@media (max-width: 1000px) {
+	.screenshot {
+		display: block;
+		width: 100%;
+	}
+
+	.description {
+		width: 85%;
+		display: block;
+		margin-right: auto;
+  		margin-left: auto;
+		position: static;
+	}
+
+	.project-wrap {
+		margin-bottom: 0px;
+		border-bottom: 2px solid grey;
+		padding-bottom: 20px;
+	}
+
 }
 
