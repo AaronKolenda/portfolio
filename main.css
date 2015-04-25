@@ -7,8 +7,6 @@ body {
 header {
 	text-align: center;
 	font-family: 'Cantarell', sans-serif;
-	font-size: 18px;
-	color: white;
 	background: linear-gradient(rgb(170, 66, 3), rgba(0,0,0,0.01));
 	padding: 30px;
 }
@@ -28,7 +26,7 @@ img {
 }
 
 .contact img{
-	display:inline;
+	display: inline-block;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 20px;
@@ -85,8 +83,8 @@ img {
 
 .intro {
 	font-size: 20px;
-	padding-left: 200px;
-	padding-right: 200px;
+	width: 85%;
+	margin: auto;
 	padding-top: 10px;
 }
 
@@ -106,7 +104,7 @@ img {
 }
  
 .nav p{ 
-	padding: 40px 70px;
+	padding: 0px 70px;
 	display:inline;
 	font-size:40px;
 }
@@ -134,6 +132,12 @@ img {
 	width: 30%;
 }
 
+@media (max-width: 1073px) {
+	header h1 {
+		font-size: 50px;
+	}
+}
+
 @media (max-width: 1000px) {
 	.screenshot {
 		display: block;
@@ -156,3 +160,124 @@ img {
 
 }
 
+@media (max-width: 925px) {
+
+	header {
+		padding: 10px;
+	}
+
+	.nav p{ 
+		padding: 0px 35px;
+	}
+
+	.projects {
+	  margin: 30px 0px;
+	}
+
+	.projects p {
+  		padding-bottom: 0px;
+	}
+
+}
+
+@media (max-width: 865px) {
+	header h1 {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 715px) {
+
+	h1 {
+		font-size: 30px;
+		margin-bottom: 0px;
+	}
+
+	header h1 {
+		font-size: 30px;
+	}
+
+	.description {
+		width: 100%;
+	}
+
+	.nav p {
+  		font-size: 30px;
+	}
+
+
+
+}
+
+@media (max-width: 600px) {
+
+	.nav p{ 
+		padding: 0px 25px;
+		font-size: 25px;
+	}
+
+	.projects {
+	  margin: 20px 0px;
+	}
+
+	.projects img {
+		width: 50%;
+	}
+
+}
+
+@media (max-width: 527px) {
+
+	header h1 {
+		font-size: 25px;
+	}
+
+	.projects, .intro {
+	  font-size: 16px;
+	}
+
+}
+
+@media (max-width: 470px) {
+
+	header h1 {
+		font-size: 23px;
+	}
+
+	.nav p{ 
+		padding: 0px 25px;
+		font-size: 20px;
+	}
+
+	.projects {
+	  margin: 10px 0px;
+	}
+
+}
+
+@media (max-width: 430px) {
+
+	.contact {
+		width: 70%;
+		margin: auto;
+	}
+
+	.contact img {
+		display: inline;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
+@media (max-width: 410px) {
+
+	header h1 {
+		font-size: 20px;
+	}
+
+	.nav p{ 
+		padding: 0px 20px;
+		font-size: 20px;
+	}
+
+}
