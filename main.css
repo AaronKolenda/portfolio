@@ -6,8 +6,8 @@ body {
 
 header {
 	text-align: center;
-	font-family: 'Cantarell', sans-serif;
-	background: linear-gradient(rgb(170, 66, 3), rgba(0,0,0,0.01));
+	font-family: 'Merienda One', cursive;
+	background: linear-gradient(rgb(170, 66, 3), rgb(255, 255, 255));
 	padding: 30px;
 }
 
@@ -36,7 +36,6 @@ img {
 	font-size: 12px;
 	text-align: center;
 	font-family: 'Cantarell', sans-serif;
-	background-image: url('images/back.png');
 }
 
 .description {
@@ -44,6 +43,10 @@ img {
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 70px;
+}
+
+.description p {
+	margin-top: 0px;
 }
 
 .fix-nav {
@@ -88,6 +91,10 @@ img {
 	padding-top: 10px;
 }
 
+.intro a {
+	color: red;
+}
+
 .nav  {
 	margin: 40px 0px;
 	text-align: center;
@@ -115,8 +122,13 @@ img {
 	padding-top: 10px;
 }
 
+.projects a {
+	color: red;
+}
+
 .projects p {
-	padding-bottom: 15px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 .project-wrap {
@@ -124,6 +136,11 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	width: 85%;
+	padding: 20px;
+}
+
+.project-wrap:nth-child(even) {
+	background: radial-gradient(circle, rgb(255,240,240), rgb(255,255,255));
 }
 
 .screenshot {
@@ -132,13 +149,13 @@ img {
 	width: 30%;
 }
 
-@media (max-width: 1073px) {
+@media (max-width: 1143px) {
 	header h1 {
 		font-size: 50px;
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
 	.screenshot {
 		display: block;
 		width: 100%;
@@ -160,11 +177,13 @@ img {
 
 }
 
-@media (max-width: 925px) {
-
+@media (max-width: 965px) {
 	header {
 		padding: 10px;
 	}
+}
+
+@media (max-width: 925px) {
 
 	.nav p{ 
 		padding: 0px 35px;
@@ -180,13 +199,13 @@ img {
 
 }
 
-@media (max-width: 865px) {
+@media (max-width: 923px) {
 	header h1 {
 		font-size: 40px;
 	}
 }
 
-@media (max-width: 715px) {
+@media (max-width: 745px) {
 
 	h1 {
 		font-size: 30px;
@@ -226,7 +245,7 @@ img {
 
 }
 
-@media (max-width: 527px) {
+@media (max-width: 562px) {
 
 	header h1 {
 		font-size: 25px;
@@ -255,7 +274,11 @@ img {
 
 }
 
-@media (max-width: 430px) {
+@media (max-width: 435px) {
+
+	header h1 {
+		font-size: 20px;
+	}
 
 	.contact {
 		width: 70%;
@@ -270,10 +293,6 @@ img {
 }
 
 @media (max-width: 410px) {
-
-	header h1 {
-		font-size: 20px;
-	}
 
 	.nav p{ 
 		padding: 0px 20px;
