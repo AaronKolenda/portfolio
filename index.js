@@ -11,13 +11,13 @@ $(document).on("ready", function() {
 			console.log("in if");
 			$nav.css("background-color", "rgba(119, 31, 31, 0.93)");
 			$nava.css("color", "rgb(255, 209, 220)");
-			$nav.css("top", "-40px");
+			$nav.css("top", "0px");
 			$nav.css("z-index", "1");
 		}
 		if ($("#nav-sticky-wrapper").hasClass('is-sticky') === false) {
 			console.log("in second if");
-			$nav.css("background-color", "transparent");
-			$nava.css("color", "red");
+			$nav.css("background-color", "rgb(119, 31, 31)");
+			$nava.css("color", "rgb(255, 209, 220)");
 			$nav.css("top", "0px");
 			$nav.css("z-index", "0");
 		}
